@@ -10,6 +10,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
+        <!-- Latest News section -->
+        <h3> Latest News</h3>
+        <ul>
+            {% for source in news_sources %}
+                <li> {{ source.name}} </li>
+                <li> {{ source.description}} </li>
+            {% endfor %}
+        </ul>
     </body>
 </html>

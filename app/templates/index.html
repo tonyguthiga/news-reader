@@ -1,3 +1,6 @@
+
+{% import 'macros.html' as macro %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,12 +14,13 @@
     </head>
     <body>
         <!-- Latest News section -->
-        <h3> Latest News</h3>
+        <h3> News Sources </h3>
         <ul>
-            {% for source in news_sources %}
-                <li> {{ source.name}} </li>
-                <li> {{ source.description}} </li>
-            {% endfor %}
+            {{ macro.displaySourcesList(news_sources)}}
+        </ul>
+        <h3> News Articles </h3>
+        <ul>
+            {{ macro.displayArticlesList(news_articles)}}
         </ul>
     </body>
 </html>

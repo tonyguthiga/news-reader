@@ -1,4 +1,4 @@
-
+{% extends 'base.html' %}
 {% import 'macros.html' as macro %}
 
 <!DOCTYPE html>
@@ -13,7 +13,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <!-- Latest News section -->
+        <!-- Content block-->
+        {% block content %}
+
         <h3> News Sources </h3>
         <ul>
             {{ macro.displaySourcesList(news_sources)}}
@@ -22,5 +24,7 @@
         <ul>
             {{ macro.displayArticlesList(news_articles)}}
         </ul>
+
+        {% endblock %}
     </body>
 </html>

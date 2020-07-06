@@ -18,5 +18,7 @@ def news(news_id):
     '''
     View news page function that returns the news details page and its data
     '''
+    #Getting news articles
+    news_articles = get_article()
     title = 'Home - News ID '
-    return render_template('news.html',title = title)
+    return render_template('news.html',title = title, news_articles = news_articles)

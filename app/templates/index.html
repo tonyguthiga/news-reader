@@ -16,14 +16,15 @@
         <!-- Content block-->
         {% block content %}
 
-        <h3> News Sources </h3>
-        <ul>
-            {{ macro.displaySourcesList(news_sources)}}
-        </ul>
         <h3> News Articles </h3>
         <ul>
             {{ macro.displayArticlesList(news_articles)}}
         </ul>
+        <h3> News Sources </h3>
+        <ul>
+            {{ macro.displaySourcesList(news_sources)}}
+        </ul>
+        
 
         {% endblock %}
     </body>

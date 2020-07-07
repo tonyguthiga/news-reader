@@ -1,15 +1,20 @@
-{% macro displaySourcesList(news_sources) %}
+{% macro displayArticlesList(news_articles) %} {% for articles in news_articles %}
+  
+<div class="col-md-4 card" style="padding: 2%;">
+    <img class="img-responsive" src="{{articles.urlToImage}}" alt="{{articles.title}}">
+    <div class="card-body">
+        <h5 class="card-title"><strong>{{articles.title}}</strong></h5>
+        <p class="card-text">{{articles.description}}</p>
+        <p class="card-text">Published on:{{articles.publishedAt}}</p>
+        <a href="{{articles.url}}" class="btn btn-primary">Read More</a>
+    </div>
+</div>
+{% endfor %} {% endmacro %} {% macro displaySourcesList(news_sources) %} {% for sources in news_sources %}
+<footer class="page-footer pt-4">
+<div class="col-6 col-md-3">
+    <a href="{{sources.url}}"> {{sources.name}}</a>
+</div>
+</footer>
 
-    {% for sources in news_sources %}
-        <li> {{sources.name}} </li>
-    {% endfor %}
-
-{% endmacro %}
-
-{% macro displayArticlesList(news_articles) %}
-
-    {% for articles in news_articles %}
-        <li> {{articles.author}} </li>
-    {% endfor %}
-
-{% endmacro %}
+{% endfor %} {% endmacro %} 
+ 

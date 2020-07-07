@@ -48,17 +48,17 @@ def process_sources(news_list):
 
     return news_sources
 
-def get_article():
+def get_articles():
     '''
     Function that gets the json response to our url request
     '''
     get_article_url = article_base_url.format(api_key)
 
-    get_article_response = requests.get(get_article_url).json()
+    get_articles_response = requests.get(get_article_url).json()
 
     news_articles = None 
 
-    if get_article_response['articles']:
+    if get_articles_response['articles']:
         news_articles_list = get_articles_response['articles']
         news_articles = process_articles(news_articles_list)
     

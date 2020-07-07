@@ -10,11 +10,9 @@
     </div>
 </div>
 {% endfor %} {% endmacro %} {% macro displaySourcesList(news_sources) %} {% for sources in news_sources %}
-<footer class="page-footer pt-4">
 <div class="col-6 col-md-3">
-    <a href="{{sources.url}}"> {{sources.name}}</a>
+    <a href="{{sources.url}}" target="_blank"> {{sources.name}}</a>
 </div>
-</footer>
 
 {% endfor %} {% endmacro %} 
  

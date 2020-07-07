@@ -16,15 +16,23 @@
         <!-- Content block-->
         {% block content %}
 
-        <h3> News Articles </h3>
-        <ul>
-            {{ macro.displayArticlesList(news_articles)}}
-        </ul>
-        <h3> News Sources </h3>
-        <ul>
-            {{ macro.displaySourcesList(news_sources)}}
-        </ul>
-        
+        <div class="container">
+            <div>
+                <h3>News Articles</h3>
+            </div>
+            <div class="row">
+                {{ macro.displayArticlesList(news_articles)}}
+            </div>
+            <div>
+                <h3>News Sources</h3>
+            </div>
+            <div class="row">
+                {{ macro.displaySourcesList(news_sources)}}
+            </div>
+            <footer class="page-footer font-small special-color-dark pt-4">
+                <div class="footer-copyright text-center py-3">© 2020 Copyright: News-Reader.com</div>    
+            </footer>
+        </div>
 
         {% endblock %}
     </body>

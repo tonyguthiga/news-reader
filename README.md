@@ -1,26 +1,26 @@
-# Title
+# Title:
 
 News-Reader
 
-## Project Description
+## Project Description:
 
 This is an application that allows users to list and preview news articles from various sources. 
 
-## Behaviour Driven development
+## Behaviour Driven development:
 The  application allows users to:
   * See various news sources and select any source desired.
   * View various news articles from the source choosen.
   * View image, description and the time the articles was created.
   * Click and read full article.
 
-## Setup Instruction
+## Setup Instruction:
 *click on the link to the deployed page:
 
  ## Technologies used:
   * Python
   * Bootsrap
 
-## License
+## License:
 
 MIT License
 
@@ -32,10 +32,10 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## Author
+## Author:
 
 Antony Guthiga
 
-## Contact Detail
+## Contact Detail:
 
 tonyguthiga93@gmail.com
